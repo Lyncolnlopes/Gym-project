@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+
     <title>Home</title>
 </head>
+
 <body>
 
-<header>
-    <nav class="">
-        <a href="/" class="nav-link"> <img class="icon-logo" src="https://cdn-icons-png.flaticon.com/512/3503/3503343.png" alt=""></a>
-         <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="/" class="nav-link"> <img class="icon-logo"
+                        src="https://cdn-icons-png.flaticon.com/512/3503/3503343.png" alt=""></a></div>
+
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <div class="menu">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/views/planos.handlebars" class="nav-link">Nossos Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/views/onde.handlebars" class="nav-link">Onde nos encontrar</a>
+                    </li>
+
+                </div></script>
+
+        </nav>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+
+
+
+
+    <footer>
+        <div class="custom-shape-divider-top-1678888097">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
         </div>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="/" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="/views/planos.handlebars"class="nav-link">Nossos Planos</a>
-            </li>
-            <li class="nav-item">
-                <a href="/views/onde.handlebars"class="nav-link">Onde nos encontrar</a>
-            </li>
-            <div class="active"></div>
-        </ul>
+        <div class="fa-3x">
 
-    </nav>
-</header>
+            <a href="/" class="nav-link">
+                <h2><span>Academia Nova Forma &copy;</span></h2>
+            </a>
+            <!-- bounce animation with no "squish" -->
+            <a href="https://github.com/Lyncolnlopes"><i class="fa-brands fa-github fa-bounce"
+                    style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i></a>
 
-    {{{body}}}
+            <!-- bounce animation with no "squish" or "rebound" -->
+            <a href="https://www.linkedin.com/in/lyncoln-araujo-2ba4641a3/"><i class="fa-brands fa-linkedin fa-bounce"
+                    style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; "></i>
+            </a>
+        </div>
+    </footer>
 
-
-
-<footer>
-    <div class="custom-shape-divider-top-1678888097">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    <div class="fa-3x">
-
-    <a href="/" class="nav-link"> <h2><span>Academia Nova Forma &copy;</span></h2></a>
-  <!-- bounce animation with no "squish" -->
-    <a href="https://github.com/Lyncolnlopes"><i class="fa-brands fa-github fa-bounce"style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; " ></i></a>
-
-  <!-- bounce animation with no "squish" or "rebound" -->
-  <a href="https://www.linkedin.com/in/lyncoln-araujo-2ba4641a3/"><i class="fa-brands fa-linkedin fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; " ></i> </a>
-</div>
-</footer>
-<script src="/public/js/mobile-navbar.js"></script>
 </body>
+
 </html>

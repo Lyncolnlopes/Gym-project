@@ -6,8 +6,7 @@ app.use(express.json())
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.use(express.static('public'))
-app.use(express.static(path.join(__dirname, 'public/css/')));
-app.use(express.static(path.join(__dirname, 'public/img/')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', 'views');
 
 app.use(
@@ -15,6 +14,10 @@ app.use(
       extended: true,
     }),
 )
+app.get('/public/js',( req,res) =>{
+  res.type('application/javascript');
+  res.sendFile('/public/js');
+});
 
 app.get('/', function(req,res){
     res.render('home')

@@ -1,58 +1,61 @@
-<main >
-<figure id="container">
-    
-  <figcaption>Academia Nova forma</figcaption>
+<main>
+  <figure id="container">
 
 
-  <div id="calculo">
-            <section class="calc-imc">
-                <h1 class="imc">Calcule seu IMC</h1>
-                <form class="form" id="form">
-                    <label for="kilos">
-                        Quilos
-                        <input name="kilos"  id="kilos" placeholder="Peso atual" type="number" />
-                    </label>
-                    <label for="altura">
-                        Altura
-                        <input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
-                    </label>
-                    <label for="imc">
-                        IMC
-                        <input disabled="disabled" name="imc" id="imc"/>
-                    </label>
-                    <button>Calcular</button>
-                </form>
-            </section>
-    </div>  
-  
-</figure>
-<div id="container-cards">
+    <div class="titulo">
+      <p >Academia nova forma </p>
+    </div>
+
+    <div id="calculo">
+      <section class="calc-imc">
+        <h1 class="imc">Calcule seu IMC</h1>
+        <form class="form" id="form">
+          <label for="kilos">
+            Quilos
+            <input name="kilos" id="kilos" placeholder="Peso atual" type="number" />
+          </label>
+          <label for="altura">
+            Altura
+            <input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
+          </label>
+          <label for="imc">
+            IMC
+            <input disabled="disabled" name="imc" id="imc" />
+          </label>
+          <button>Calcular</button>
+        </form>
+      </section>
+    </div>
+  </figure>
+  <div id="container-cards">
     <div class="cards">
-      <img src="https://images.pexels.com/photos/4164519/pexels-photo-4164519.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+      <img class="img-card"
+        src="https://images.pexels.com/photos/4164519/pexels-photo-4164519.jpeg?auto=compress&cs=tinysrgb&w=1600" />
       <div>
         <h2>Tenha aulas de qualidade e grande resultados </h2>
         <h3>Aulas de crossfit</h3>
         <p>
-          
+
         </p>
         <button>Me matricular agora</button>
       </div>
     </div>
     <div class="cards">
-      <img src="https://images.pexels.com/photos/6339342/pexels-photo-6339342.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+      <img class="img-card"
+        src="https://images.pexels.com/photos/6339342/pexels-photo-6339342.jpeg?auto=compress&cs=tinysrgb&w=1600" />
       <div>
         <h2>Aulas coletiva e com profissionais capacitados </h2>
         <h3>Aulas conjustas</h3>
         <p>
-          
+
         </p>
         <button>Me matricular agora</button>
       </div>
     </div>
-</div>
+  </div>
 
-  
-<script src="/js/calcIMC.js"></script>
+
+  <script src="/js/calcIMC.js"></script>
 
 
 </main>
