@@ -13,20 +13,22 @@ app.use(
     express.urlencoded({
       extended: true,
     }),
-)
+);
 
 
 app.get('/', function(req,res){
     res.render('home')
-})
+});
 
 app.get('/views/planos.handlebars', function(req,res){
     res.render('planos')
-})
+});
 
 app.get('/views/onde.handlebars', function(req,res){
     res.render('onde')
-})
+});
 
-app.listen(3000)
+app.listen(5000,()=> {
+  console.log("Serve is running on port 5000!")
+});
 
