@@ -8,6 +8,8 @@ app.set('view engine', 'handlebars');
 app.use(express.static('public'))
 app.use(express.static(path.join(__dirname + '../../' * '/public')));
 app.set("views", path.join(__dirname,"views"))
+app.set("public", path.join(__dirname,"css"))
+app.set("public", path.join(__dirname,"js"))
 
 app.set('views', 'views');
 
